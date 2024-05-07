@@ -2,6 +2,7 @@
 </br>
 <ol>
 <li>Instalar <a href="https://docs.chocolatey.org/en-us/choco/setup">Chocolatey no CMD</a></li>
+</br>
 <p>A seguir colocar estes comandos:</p>
 <ul>
 <li>choco install zip</li>
@@ -19,6 +20,7 @@
 </br>
 <li>Remover o ";" no início destas duas linhas encontradas no ficheiro php.ini.</li>
 <ul>
+  </br>
 <li>;extensiong=gd.dll</li> 
 <li>;extension=zip.dll</li>
 </ul>
