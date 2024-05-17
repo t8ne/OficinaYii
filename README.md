@@ -26,6 +26,7 @@
 </ul>
 
 </br>
-
-<li> Fazer "composer install" na diretoria do Projeto</li>
+<li> Fazer "composer install" na diretoria do Projeto.</li>
+</br>
+<li> Para iniciar o sistema: "php yii serve"</li>
 </ol>
