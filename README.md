@@ -25,4 +25,7 @@
 <li>;extension=zip.dll</li>
 </ul>
 
+</br>
+
+<li> Fazer "composer install" na diretoria do Projeto</li>
 </ol>
