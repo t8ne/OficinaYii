@@ -21,7 +21,7 @@
 <li>Remover o ";" no início destas duas linhas encontradas no ficheiro php.ini.</li>
 <ul>
   </br>
-<li>;extensiong=gd.dll</li> 
+<li>;extension=gd.dll</li> 
 <li>;extension=zip.dll</li>
 </ul>
 
