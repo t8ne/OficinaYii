@@ -1,3 +1,7 @@
+# Mudar branch
+
+Mudar a branch para a 'master' para conseguir ver as mais recentes atualizações.
+
 # Passos de Setup do ficheiro:
 </br>
 <ol>
