@@ -1,53 +1,68 @@
 <?php
+/* @var $this yii\web\View */
 
 /** @var yii\web\View $this */
+use yii\helpers\Html;
 
-$this->title = 'My Yii Application';
+$this->title = 'Oficina Yii';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4">Congratulations!</h1>
+    <div class="jumbotron">
+        <h1>Oficina Yii</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+        <p class="lead" style="margin-bottom: 50px">Desenvolvido por: António Rebelo Nº28837 & Diogo Pinto Nº28899</p>
 
-        <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
     </div>
 
     <div class="body-content">
 
         <div class="row">
-            <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+            <div class="col-lg-4">
+                <p><?= Html::a('Clientes', ['cliente/index'], ['class' => 'btn btn-primary btn-block']) ?></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <p><?= Html::a('Veiculos', ['veiculo/index'], ['class' => 'btn btn-primary btn-block']) ?></p>
+            </div>
+            <div class="col-lg-4">
+                <p><?= Html::a('Modelos', ['modelo/index'], ['class' => 'btn btn-primary btn-block']) ?></p>
+            </div>
+        </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+        <div class="row">
+            <div class="col-lg-4">
+                <p><?= Html::a('Pedidos', ['pedido/index'], ['class' => 'btn btn-primary btn-block']) ?></p>
+            </div>
+            <div class="col-lg-4">
+                <p><?= Html::a('Peças', ['pecas/index'], ['class' => 'btn btn-primary btn-block']) ?></p>
+            </div>
+            <div class="col-lg-4">
+                <p><?= Html::a('Compra de Peças', ['comprapecas/index'], ['class' => 'btn btn-primary btn-block']) ?>
+                </p>
+            </div>
+        </div>
 
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+        <div class="row">
+            <div class="col-lg-4">
+                <p><?= Html::a('Fornecedores', ['fornecedor/index'], ['class' => 'btn btn-primary btn-block']) ?></p>
+            </div>
+            <div class="col-lg-4">
+                <p><?= Html::a('Funcionários', ['funcionario/index'], ['class' => 'btn btn-primary btn-block']) ?></p>
+            </div>
+            <div class="col-lg-4">
+                <p><?= Html::a('Reparações', ['reparacao/index'], ['class' => 'btn btn-primary btn-block']) ?></p>
             </div>
         </div>
 
     </div>
 </div>
+<style>
+    .body-content {
+        text-align: center;
+    }
+
+    .jumbotron {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+</style>

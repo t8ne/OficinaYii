@@ -8,7 +8,7 @@ use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
 use yii\captcha\Captcha;
 
-$this->title = 'Contact';
+$this->title = 'Contacto';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-contact">
@@ -17,47 +17,47 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
         <div class="alert alert-success">
-            Thank you for contacting us. We will respond to you as soon as possible.
+            Obrigado por nos contactar. Responderemos assim que possível.
         </div>
 
         <p>
-            Note that if you turn on the Yii debugger, you should be able
-            to view the mail message on the mail panel of the debugger.
+            Note que se você ativar o depurador Yii, deverá ser capaz de visualizar a mensagem de email no painel de emails
+            do depurador.
             <?php if (Yii::$app->mailer->useFileTransport): ?>
-                Because the application is in development mode, the email is not sent but saved as
-                a file under <code><?= Yii::getAlias(Yii::$app->mailer->fileTransportPath) ?></code>.
-                Please configure the <code>useFileTransport</code> property of the <code>mail</code>
-                application component to be false to enable email sending.
+                Como a aplicação está em modo de desenvolvimento, o email não é enviado, mas salvo como
+                um arquivo em <code><?= Yii::getAlias(Yii::$app->mailer->fileTransportPath) ?></code>.
+                Por favor, configure a propriedade <code>useFileTransport</code> do componente de aplicação <code>mail</code>
+                para false para habilitar o envio de emails.
             <?php endif; ?>
         </p>
 
     <?php else: ?>
 
         <p>
-            If you have business inquiries or other questions, please fill out the following form to contact us.
-            Thank you.
+            Se você tiver dúvidas comerciais ou outras perguntas, preencha o seguinte formulário para nos contactar.
+            Obrigado.
         </p>
 
-        <div class="row">
-            <div class="col-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
 
                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                    <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+                <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'placeholder' => 'Nome']) ?>
 
-                    <?= $form->field($model, 'email') ?>
+                <?= $form->field($model, 'email')->textInput(['placeholder' => 'Email']) ?>
 
-                    <?= $form->field($model, 'subject') ?>
+                <?= $form->field($model, 'subject')->textInput(['placeholder' => 'Assunto']) ?>
 
-                    <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+                <?= $form->field($model, 'body')->textarea(['rows' => 6, 'placeholder' => 'Mensagem']) ?>
 
-                    <?= $form->field($model, 'verifyCode')->widget(Captcha::class, [
-                        'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-                    ]) ?>
+                <?= $form->field($model, 'verifyCode')->widget(Captcha::class, [
+                    'template' => '<div class="row"><div class="col-lg-4">{image}</div><div class="col-lg-8">{input}</div></div>',
+                ]) ?>
 
-                    <div class="form-group">
-                        <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
-                    </div>
+                <div class="form-group mt-3">
+                    <?= Html::submitButton('Enviar', ['class' => 'btn btn-primary btn-block', 'name' => 'contact-button']) ?>
+                </div>
 
                 <?php ActiveForm::end(); ?>
 
