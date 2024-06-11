@@ -11,9 +11,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1>Sobre</h1>
 
     <h2>Projeto de Engenharia de Software</h2>
-    <p>Este projeto foi desenvolvido como parte da disciplina de Engenharia de Software do curso de [Nome do Curso] na
-        [Nome da Universidade/Instituição]. O objetivo principal deste trabalho foi criar uma aplicação web utilizando o
-        framework Yii, implementando as melhores práticas de desenvolvimento de software, design de banco de dados, e
+    <p>Este projeto foi desenvolvido como parte da disciplina de Engenharia de Software do curso de Engenharia da Computação Gráfica e Multimédia na
+        Escola Superior de Tecnologia e Gestão, do Instituto Politécnico de Viana do Castelo. 
+        O objetivo principal deste trabalho foi criar uma aplicação web utilizando o framework Yii, implementando as melhores práticas de desenvolvimento de software, design de banco de dados, e
         arquitetura de sistemas.</p>
 
     <h3>Objetivos do Projeto</h3>
